@@ -1,0 +1,23 @@
+{
+  "name": "toss-node-api",
+  "version": "1.0.0",
+  "description": "Testing TOSS API using node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./test/main.js"
+  },
+  "keywords": [
+    "payment",
+    "toss"
+  ],
+  "author": "ChangJoo Park",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.1.1",
+    "shortid": "^2.2.8"
+  }
+}
