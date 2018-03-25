@@ -15,5 +15,7 @@
 - [x] 결제 상태
 - [x] 에스크로
 - [x] API 요청 HTTP Client
+- [ ] Body 검증 룰 추가
+- [ ] 문서화
 - [ ] dist 버전 빌드
 - [ ] npm 배포
