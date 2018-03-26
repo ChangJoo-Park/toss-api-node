@@ -1,7 +1,7 @@
 {
   "name": "toss-node-api",
   "version": "1.0.3",
-  "description": "Testing TOSS API using node",
+  "description": "Node.js 용 Toss API 구현체입니다",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
