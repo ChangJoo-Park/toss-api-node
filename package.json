@@ -1,6 +1,6 @@
 {
   "name": "toss-node-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js 용 Toss API 구현체입니다",
   "main": "index.js",
   "scripts": {
