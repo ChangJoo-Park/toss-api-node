@@ -1,6 +1,6 @@
 {
   "name": "toss-node-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Testing TOSS API using node",
   "main": "index.js",
   "scripts": {
@@ -14,10 +14,10 @@
   "author": "ChangJoo Park",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^1.17.2"
+    "nodemon": "^1.17.2",
+    "shortid": "^2.2.8"
   },
   "dependencies": {
-    "node-fetch": "^2.1.1",
-    "shortid": "^2.2.8"
+    "node-fetch": "^2.1.1"
   }
 }
