@@ -2,7 +2,35 @@
 
 ## TOSS API
 
-[TOSS](https://tossdev.github.io/gettingstarted.html)
+[TOSS 공식문서](https://tossdev.github.io/gettingstarted.html)를 보고 만들었습니다.
+
+## 사용방법
+
+```bash
+npm install --save toss-node-api
+```
+
+```js
+const TossAPI = require('toss-node-api')
+const Toss = TossAPI.Toss
+
+// 직접 발급받은 API 키를 사용하세요
+const apiKey = 'sk_test_apikey1234567890a'
+const tossObject = new Toss({ apiKey })
+const requiredInfo = {} // 생략
+const optionalInfo = {} // 생략
+
+const main = async () => {
+  try {
+    const data = await tossObject.makePayment(requiredInfo, optionalInfo)
+    console.log(data)
+  } catch (e) {
+    // 에러 핸들링
+  }
+}
+
+main()
+```
 
 ## 할 일
 
