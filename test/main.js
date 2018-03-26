@@ -1,11 +1,9 @@
 const shortId = require('shortid')
-
 const Toss = require('../lib/toss')
+const { API_KEY: apiKey } = require('./env')
 
 const main = async () => {
-  const toss = new Toss({
-    apiKey: 'sk_test_apikey1234567890a'
-  })
+  const toss = new Toss({ apiKey })
   const makePayment = async () => {
     const requiredInfo = {
       orderNo: shortId.generate(), // 상품 결제에 대한 유니크값
@@ -124,7 +122,6 @@ const main = async () => {
     }
   }
 
-  // Testing Methods
   await makePayment()
   await approvePayment()
   await cancelPayment()
