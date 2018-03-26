@@ -1,16 +1,14 @@
-const fetch = require('node-fetch')
 const shortId = require('shortid')
 
 const Toss = require('../lib/toss')
 
-main = async () => {
+const main = async () => {
   const toss = new Toss({
     apiKey: 'sk_test_apikey1234567890a'
   })
-  const makePayment =  async () => {
-    // Make Payment
+  const makePayment = async () => {
     const requiredInfo = {
-      orderNo: shortId.generate(), // 실제로는 매장 Hash이어야 함
+      orderNo: shortId.generate(), // 상품 결제에 대한 유니크값
       amount: 35000,
       productDesc: '토스티셔츠',
       autoExecute: false,
@@ -65,7 +63,7 @@ main = async () => {
         amount: -1,
         orderNo: ''
       }
-        const data = await toss.cancelPayment(requiredInfo, options)
+      const data = await toss.cancelPayment(requiredInfo, options)
       console.log(data)
     } catch (error) {
       console.log(error)
@@ -108,9 +106,7 @@ main = async () => {
 
   const refundDetails = async () => {
     try {
-      const requiredInfo = {
-        refundNo: '7161b8e3-4b79-49d7-ab3c-3ae898aa073b'
-      }
+      const requiredInfo = { refundNo: '7161b8e3-4b79-49d7-ab3c-3ae898aa073b' }
       const data = await toss.getRefundDetails(requiredInfo)
       console.log(data)
     } catch (error) {
@@ -120,9 +116,7 @@ main = async () => {
 
   const makeEscrow = async () => {
     try {
-      const requiredInfo = {
-        payToken: 'test_token1234567890a'
-      }
+      const requiredInfo = { payToken: 'test_token1234567890a' }
       const data = await toss.doEscrow(requiredInfo)
       console.log(data)
     } catch (error) {
