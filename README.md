@@ -17,5 +17,5 @@
 - [x] API 요청 HTTP Client
 - [ ] Body 검증 룰 추가
 - [x] 문서화
-- [ ] dist 버전 빌드
+- [ ] ~dist 버전 빌드~
 - [x] npm 배포
