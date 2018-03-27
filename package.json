@@ -1,6 +1,6 @@
 {
   "name": "toss-node-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Node.js 용 Toss API 구현체입니다",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,13 @@
     "payment",
     "toss"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChangJoo-Park/toss-api-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChangJoo-Park/toss-api-node/issues"
+  },
   "author": "ChangJoo Park",
   "license": "MIT",
   "devDependencies": {
